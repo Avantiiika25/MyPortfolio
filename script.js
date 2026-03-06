@@ -37,7 +37,7 @@ const projects = [
     live: "https://e-shop-zeta-murex.vercel.app/",
     code: "https://github.com/Avantiiika25/e-shop"
   },
-  {
+  /*{
     title: "House Rental Web Application",
     description: "Built a web application using HTML, CSS, JavaScript, React.js, and MySQL, Implemented user login, property listing display, and booking interface with REST APIs, Developed CRUD functionality and deployed on Netlify and Vercel.",
     tech: "HTML, CSS, JavaScript, React.js, MySQL, Express.js, Vercel",
@@ -60,7 +60,7 @@ const projects = [
     img: "images/project4.png",
     live: "",
     code: "https://github.com/Avantiiika25/get-youtube-subscribers"
-  }
+  }*/
 ];
 
 const projectsContainer = document.getElementById("projectsContainer");
@@ -86,9 +86,9 @@ projects.forEach(project => {
 
 // Certifications
 const certs = [
-  {title:"Python & Java - Cisco", img:"images/cert1.jpg"},
-  {title:"MERN Stack - IIT Guwahati", img:"images/cert2.jpg"},
-  {title:"Accenture Developer Simulation", img:"images/cert3.jpg"},
+  {title:"Microsoft Student Ambassador", img:"images/cert1.jpg"},
+  {title:"Google Developer Group", img:"images/cert2.jpg"},
+  {title:"Recipe Api Backend Developement- DevTown", img:"images/cert3.jpg"},
   {title:"Udemy full Stack Devlopement", img:"images/cert4.jpg"}
 ];
 

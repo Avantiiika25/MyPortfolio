@@ -222,6 +222,7 @@ body{
   text-align:center;
   font-size:40px;
   margin-bottom:50px;
+  color:white;
 }
 
 /* Grid */
@@ -332,15 +333,28 @@ footer{
   border-top:1px solid #eee;
 }
 
-/* SCROLL REVEAL */
+/* SCROLL REVEAL UPDATED */
 .reveal{
   opacity:0;
   transform:translateY(40px);
   transition:1s;
+  animation:fadeUp 1s ease forwards;
 }
+
 .reveal.active{
   opacity:1;
   transform:translateY(0);
+}
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(40px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
 }
 
 /* RESPONSIVE */
@@ -366,6 +380,8 @@ footer{
     font-size:32px;
   }
 }
+
+/* EDUCATION */
 .education-container {
   max-width: 1000px;
   margin: auto;
@@ -428,6 +444,8 @@ footer{
     margin-top: 5px;
   }
 }
+
+/* SKILLS SECTION */
 .skills-section {
   background: #0b0b0b;
   padding: 70px 10%;
@@ -445,7 +463,6 @@ footer{
   gap: 12px;
 }
 
-/* Pill Style */
 .skill-pill {
   background: #141414;
   color: #dcdcdc;
@@ -460,7 +477,6 @@ footer{
   border: 1px solid #1f1f1f;
 }
 
-/* Hover Effect */
 .skill-pill:hover {
   background: #1f1f1f;
   color: #fff;
@@ -468,7 +484,6 @@ footer{
   box-shadow: 0 4px 15px rgba(255,255,255,0.08);
 }
 
-/* Animation */
 .skill-pill {
   opacity: 0;
   transform: translateY(20px);
@@ -479,6 +494,8 @@ footer{
   transform: translateY(0);
   transition: 0.4s ease;
 }
+
+/* FOOTER */
 .footer {
   background: #fff;
   padding: 60px 80px;
@@ -486,7 +503,6 @@ footer{
   color: #111;
 }
 
-/* Top row */
 .footer-top {
   display: flex;
   justify-content: space-between;
@@ -511,7 +527,6 @@ footer{
   cursor: pointer;
 }
 
-/* Center text */
 .footer-center {
   margin: 60px 0;
 }
@@ -529,7 +544,6 @@ footer{
   line-height: 1;
 }
 
-/* Bottom row */
 .footer-bottom {
   display: flex;
   justify-content: space-between;
@@ -538,7 +552,6 @@ footer{
   flex-wrap: wrap;
 }
 
-/* Social buttons */
 .social-links {
   display: flex;
   gap: 15px;
@@ -559,14 +572,12 @@ footer{
   color: #fff;
 }
 
-/* Credits */
 .credits {
   text-align: right;
   font-size: 14px;
   color: #444;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .footer {
     padding: 40px 20px;
