@@ -160,3 +160,12 @@ const revealSkills = () => {
 
 window.addEventListener("scroll", revealSkills);
 revealSkills();
+const footerCenter = document.querySelector(".footer-center");
+
+window.addEventListener("scroll", () => {
+  const rect = footerCenter.getBoundingClientRect().top;
+
+  if (rect < window.innerHeight - 100) {
+    footerCenter.classList.add("show");
+  }
+});
