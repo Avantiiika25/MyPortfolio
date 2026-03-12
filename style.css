@@ -408,18 +408,24 @@ cursor:pointer;
 .contact-popup,
 .success-popup{
 position:fixed;
-inset:0;
+top:0;
+left:0;
+width:100%;
+height:100%;
 background:rgba(0,0,0,0.6);
 display:flex;
 justify-content:center;
 align-items:center;
-transform:scale(0);
+z-index:9999;   
+opacity:0;
+pointer-events:none;
 transition:0.3s;
 }
 
 .contact-popup.show,
 .success-popup.show{
-transform:scale(1);
+opacity:1;
+pointer-events:auto;
 }
 
 .contact-popup form{
@@ -613,5 +619,6 @@ font-size:50px;
 flex-direction:column;
 align-items:center;
 }
+
 
 }
